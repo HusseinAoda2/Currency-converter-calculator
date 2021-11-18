@@ -1,0 +1,353 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font: 100 14px 'Roboto';
+  background: #3E2C41;
+}
+
+.container {width: 1170px; margin: auto;}
+
+.menu {
+	overflow: hidden;
+  width: 100%;
+}
+
+.menu .lef {
+  width: 48%; 
+  height: 40px;
+  float: right; 
+  
+}
+
+.menu .rig {
+  width: 48%; 
+  height: 40px;
+}
+
+.menu a:link, a:visited {
+  padding: 10px; 
+  text-align: center;
+  text-decoration: none;
+  background-color: #5C527F;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  font-size: 1em;
+  margin: 0.5em;
+  display: inline-block;
+}
+
+.menu a:hover, a:active {
+  background-color: #6E85B2;
+}
+
+.title {
+  text-align: center;
+  font-size: 36px;
+  color: #261C2C;
+  background-color: #5C527F;
+  overflow: hidden;
+	padding-top: 50px;
+	padding-bottom: 70px;
+}
+
+button {
+  display: block;
+  background: none;
+  border: none;
+  padding: 0;
+  font-family: inherit;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+button:active {
+  box-shadow: inset 0px 0px 80px 0px rgba(0,0,0,0.25);
+}
+
+#wrapper {
+  height: 100vh;
+  width: 100%; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#app {
+  width: 320px;
+  height: 520px;
+  position: relative;
+}
+
+.calculator {
+  width: 100%;
+  height: 100%;
+  background: black;
+  display: flex;
+  flex-direction: column;
+}
+
+#wrapper .calculator {
+  box-shadow: 0px 0px 20px 0px #aaa;
+}
+
+.calculator-display {
+  color: white;
+  background: #261C2C;
+  line-height: 130px;
+  font-size: 6em;
+  flex: 1;
+}
+
+.auto-scaling-text {
+  display: inline-block;
+}
+
+.calculator-display .auto-scaling-text {
+  padding: 0 30px;
+  position: absolute;
+  right: 0;
+  transform-origin: right;
+}
+
+.calculator-keypad {
+  height: 400px;
+  display: flex;
+}
+
+.calculator .input-keys {
+  width: 240px;
+}
+
+.calculator .function-keys {
+  display: flex;
+}
+
+.calculator .digit-keys {
+  background: #5C527F;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+}
+
+.calculator-key {
+  width: 80px;
+  height: 80px;
+  border-top: 1px solid #3E2C41;
+  border-right: 1px solid #261C2C; 
+  text-align: center;
+  line-height: 80px;
+}
+.calculator .function-keys .calculator-key {
+  font-size: 2em;
+}
+.calculator .function-keys .key-multiply {
+  line-height: 50px;
+}
+.calculator .digit-keys .calculator-key {
+  font-size: 2.25em;
+  color: white;
+}
+.calculator .digit-keys .key-0 {
+  width: 160px;
+  text-align: left;
+  padding-left: 32px;
+}
+.calculator .digit-keys .key-dot {
+  padding-top: 1em;
+  font-size: 0.75em;
+}
+.calculator .operator-keys .calculator-key {
+  color: black;
+  border-right: 0;
+  font-size: 3em;
+}
+
+.calculator .function-keys {
+  background: linear-gradient(to bottom, #5C527F, #6E85B2);
+}
+.calculator .operator-keys {
+  background:  #6E85B2;
+}
+
+.container .box{
+  height: 100vh;
+  width: 100%; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box div{
+  width: 100%;
+}
+
+select{
+  width: 95%;
+  height: 40px;
+  font-size: 1em;
+  cursor: pointer;
+  outline: none;
+  background: #6E85B2;
+  color: black;
+  margin: 0.2em 0;
+  padding: 0 1em;
+  border-radius: 10px;
+  border: none;
+}
+
+input{
+  width: 95%;
+  height: 40px;
+  font-size: 1em;
+  outline: none;
+  background: #261C2C;
+  color: white;
+  margin: 0.2em 0;
+  padding: 0 1em;
+  border-radius: 10px;
+  border: none;
+}
+
+.btn {
+  width: 98%;
+  height: 40px;
+  background: #5C527F;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  font-size: 1em;
+  margin: 0.5em;
+}
+
+.btn:hover, active {
+  background-color: #6E85B2;
+}
+
+/* Start Contact Me */ 
+.contact {
+	background-color: #5C527F;
+	overflow: hidden;
+	padding-top: 50px;
+	padding-bottom: 70px;
+}
+
+.contact .info {width: 45%; margin-right: 5%; float: right;}
+
+.contact-info {
+  text-align: left;
+  color: #fff;
+  padding-left: 2.5em;
+  margin: 5px;
+  background-blend-mode: multiply; 
+  background-size: cover; 
+}
+
+.contact-info a:link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.contact-info a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  color: #6E85B2;
+  text-decoration: none;
+}
+
+.contact-info a:active {
+  color: #6E85B2;
+  text-decoration: none;
+}
+
+.contact h2 {color: #261C2C; margin-left: 40px;}
+
+.contact p {
+  color: #fff; 
+  margin-left: 40px; 
+  font-size: 20px; 
+  font-variant-caps: all-small-caps;
+}
+
+.contact .form {
+  width: 45%;
+	color: #fff;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+.contact-form {
+  text-align: left;
+  color: #fff;
+  padding-left: 2.5em;
+  margin: 5px;
+  background-blend-mode: multiply; 
+  background-size: cover; 
+}
+
+.contact-form a:link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.contact-form a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+.contact-form a:hover {
+  color: #6E85B2;
+  text-decoration: none;
+}
+
+.contact-form a:active {
+  color: #6E85B2;
+  text-decoration: none;
+}
+
+.contact-form a i {
+  margin-bottom: 5px;
+}
+/* End Contact Me */ 
+
+/* Start Footer */ 
+.footer {
+	background-color: #261C2C;
+	color: #5C527F;
+	padding: 20px 0;
+	overflow: hidden;
+}
+
+.web-footer {padding: 5px; float: right;}
+
+.web-footer a:link {
+  color: #5C527F;
+  text-decoration: none;
+  margin: 5px;
+}
+
+.web-footer a:visited {color: #5C527F; text-decoration: none;}
+
+.web-footer a:hover {color: #6E85B2; text-decoration: none;}
+
+.web-footer a:active {color: #6E85B2; text-decoration: none;}
+
+.paragraph-footer {
+  padding: 5px;
+  margin: 5px;
+}
+/* End Footer*/ 
